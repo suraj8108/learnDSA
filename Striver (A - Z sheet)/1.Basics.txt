@@ -1,0 +1,104 @@
+Step1: - Basic Java Concepts
+	Read Java Basics
+
+Step2:
+	Basic Maths concepts
+		Pallindrome - Code
+			- Number that remains same even if reversed. Eg: 121, 1331
+		
+		GCD / HCF - Code
+			https://www.geeksforgeeks.org/program-to-find-gcd-or-hcf-of-two-numbers/
+			
+			- GCD or HCF
+				GCD of two number is the largest number that divides both of them.
+			
+			- Find Using Eucladian Algorithm:
+					GCD of two number never change if the smaller number is subtracted by the bigger number.
+					Pseudo-code:
+						gcd(a, b):
+							if a = b:
+								return a
+							if a > b:
+								return gcd(a – b, b)
+							else:
+								return gcd(a, b – a)
+			
+		Armstrong Number - Code
+			- An Armstrong number is a special kind of number in math. 
+			- It's a number that equals the sum of its digits, each raised to a power.
+			
+		Prime - Code
+			- Approach1
+				Simplest way is to loop from 1 to n and check if any element apart from 1 or n
+				O(n)
+			- Another approach would be to loop only till n/2 or sqrt(n)
+		
+		Recursion - Code
+			- Pallindrome Added
+
+Step3:
+	Sorting Techniques
+		1. Selection Sort - Code(SelectionSort)
+			https://www.geeksforgeeks.org/selection-sort-algorithm-2/
+						___Sorted Element___Unsorted Element___
+				- Select an minimum element from an unsorted array and place it at the first index of unsorted array.
+				- Time Complexity O(n^2) and O(1) space complexity.
+				- Could be a simple algorithm if memory writes are costly.
+				- Not stable algorithm (does not preservs the relative order of items with equal keys)
+				- Best Case: In every case element will be searched till the last element of an array but swap will be minimized. 
+				
+		2. Insertion Sort - Code
+			https://www.geeksforgeeks.org/insertion-sort-algorithm/
+			
+				- Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position 
+				  in a sorted portion of the list
+				- Best Case - O(n) List is already sorted	| Average Case - O(n^2)
+				- Stable algorithm
+				- It can parallely be used to sort an element with other sorting algorithms like merge sort or quick sort when the size of subarray becomes small
+				- Inplace sorting Algorithm (do not require any extra space to sort an algorithm)
+		
+		3. Bubble Sort - Code
+			https://www.geeksforgeeks.org/bubble-sort-algorithm/g
+				- Repeatedly swap and element with the adjacent element if they are in wrong order.
+				- Not suitable for large dataset
+				- Stable and inplace algorithm
+				- Best Case Time Complexity O(n)	| Worst Case Time Complexity O(n^2)
+		
+		4. Merge Sort - Code
+			https://www.geeksforgeeks.org/merge-sort/
+				- Divide and Conquer Rule.
+				- Recursively divides the input array into smaller sub arrays and sorting those subarrays then merging back together to obtain the sorted array.
+				- T(n) = 2T(n/2) + n
+				- Best, Worst, Average Case => O(nlogn)
+				- Advantages
+					- Sorting Large dataset
+					- Arrays.sort in Java uses Merge sort implementation
+					- Used in TimSort an hybrid algorithm
+				- DisAdvantages
+					- Not inplace algorithm
+					- Space Complexity
+			
+		5. Quick Sort - Code
+			https://www.geeksforgeeks.org/quick-sort-algorithm/
+				- Divide and Conquer Algorithm
+				- Picks an element as a pivot and partitions the given array around the picked pivot in its correct position in sorted array.
+				- Choosing Pivot element
+					- We have freedom to choose any element as pivot first, last, mid any.
+				- Partition -> Will keep smaller element at the left and larger element at right of the pivot
+				- Best Case -> O(nlogn) => Occurs when the pivot element divides the array into two equal halves.
+				- Worst Case -> O(n^2) 	=> Occurs when smalles or larges element is always choosen as the pivot element.
+				- Advantages	
+					- Efficient on large data set
+					- Cache fiendly as no new array is required to sort so less memory consumption.
+				- DisAdvantages
+					- Not a good for small dataset also worst case time complexity is O(n^2)
+					- Not a stable sort
+				- Application
+					- Used in partioning problems like finding the kth smallest element
+					- Used in Cryptography to generate a random encryption keys
+		7. TimSort
+				- Mixture of Insertion Sort and Merge Sort
+				- This creates a run of limited size and performs insertion sort on that and then merges using mergesort.
+				
+				
+	

@@ -1,0 +1,14 @@
+1) Priority Queue is nothing but an implementation of the Heap.
+
+2) Updating a range of element in array can be done easily 
+	-> https://www.geeksforgeeks.org/difference-array-range-update-query-o1/
+	-> Create a new array and the new array will get element index 'i'  by arr[i+1] - arr[i]
+
+3) Sort an array of 0s, 1s and 2s
+	-> Use three pointers
+
+4) Merge two sorted arrays with O(1) extra space
+	-> Remove last element of first array with the last one.
+	-> Using two pointer
+5) Find a triplet that sum to a given value
+	-> Fixed one and using two pointers find rest.

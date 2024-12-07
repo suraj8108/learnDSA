@@ -1,0 +1,38 @@
+
+Array Problem Tricks
+
+Summation Technique:
+	-> An array containing a series from 1 to N then we can use n*(n + 1) / 2 logic to resolve the issue.
+
+Multiplication Technique:
+	-> Array containing pair of identical element then a square related operation can be performed.
+
+XOR of a number
+	-> XOR operations gives output true only when inputs are different else it output false.
+	-> Note: XOR of two same number results is 000000;
+	
+Two Pointer Technique / Sliding Window
+	-> Traversing with two pointers till the end until the right pointer reaches the last index of an array.
+	
+Three Pointer Technique
+	-> Similar but with three pointers in it.
+
+Majority of element:
+	-> Morees Voting Algoithm => 
+		Mojority of an element can be found out with the help of voting.
+
+Kadane's Algorithm : Maximum Subarray Sum in an Array
+	-> 
+
+Prefix Sums Subarray
+	-> Create a prefix sums of an array but while finding an element find it based on (x-k) terms.
+
+
+
+								1
+							1		1
+						1		2		1
+					1		3		3		1
+				1		4		6		4		1
+			1		5		10		10		5		1
+		1		6		15		20		15		6		1		
