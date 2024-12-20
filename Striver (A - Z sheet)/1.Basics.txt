@@ -99,6 +99,4 @@ Step3:
 		7. TimSort
 				- Mixture of Insertion Sort and Merge Sort
 				- This creates a run of limited size and performs insertion sort on that and then merges using mergesort.
-				
-				
-	
+

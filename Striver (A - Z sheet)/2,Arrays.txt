@@ -1,3 +1,105 @@
+Arrays - Importanct Notes
+	
+	XOR Key Points
+		https://www.geeksforgeeks.org/bitwise-xor-operator-in-programming/
+		
+		-> XOR Table 1^1 = 0, 0^0 = 0, 0^1 = 1, 1^0 = 1
+		-> XOR of two same number is 0;
+		-> XOR of any number with 0 is eqaul to that number;
+	
+	Hashing
+		
+		To check if any subarray exists we can use hashing along with prefix sum to find it out.
+		 ____p - k__:____k____
+		|					  |		|
+		0					  i		n
+		 ____prefix sum(p)____|
+		 
+		 Prefix sum : sum of all the elements from 0 to i.
+		 Map: {p-k: 1}
+	
+	Kadanes Algoithm
+		-> Maximum sum of subarray.
+		-> Calculate prefixSum and mark it as 0 it at any point it becomes less that zero.
+	
+	Transpose of a matrix:
+		-> Transpose the matrix. (transposing means changing columns to rows and rows to columns)
+		1 2 3				1 4 7
+		4 5 6		-> 		2 5 8
+		7 8 9				3 6 9
+	
+	Pascals Triangle
+		-> Using Algoithm - n! / ( (n - r)! * r! )
+	
+	
+	
+	
+	
+		
+Arrays = Problems
+	1. Second Largest Element in an Array without sorting - Code
+	
+		-> We can keep an extra variable and sore the second last largest element.
+		-> In single pass we can achieve this.
+	
+	2. Rotate array by D places
+		
+		-> Array contains 1...d...n
+		-> Reverse 1 to d -> Revers d+1 to n -> Revers 1 to n
+		
+	3. Move all Zeros to the end of the array
+		https://www.geeksforgeeks.org/move-zeroes-end-array/
+		
+		-> Time Complexity - O(n) Space Complexity - O(1)
+		-> Used two pointer technique
+	
+	4. Find the Union
+		
+		-> Time Complexity - O(n) Space Complexity - O(n)
+		
+	5. Find the number that appears once, and other numbers twice	-> IMP
+		
+		-> Time Complexity - O(n) Space Complexity - O(n)
+		-> Time complexity of XOR is O(1).
+	
+	6. Longest Subarray with given Sum K(Positives) 
+	
+		-> Time Complexity - O(n) Space Complexity - O(1)
+	
+	---- Medium ----
+	
+	7. Sort Array of 0s, 1s and 2s
+		
+		-> Time Complexity - O(n)
+	
+	8. Majority Element (>n/2 times)
+		-> Time Complexity - O(n)
+	
+	9&10. Kadane's Algorithm, maximum subarray sum
+		-> Time Complexity - O(n)
+	
+	
+	11. Stock Buy And Sell
+		-> Time Complexity - O(n)
+	
+	12. Rearrange Array Elements by Sign
+		-> Time Complexity - O(n)
+	
+	13. Next Permutation
+		-> 5 2 3 4 -> 5 2 4 3 -> 5 3 2 4 -> 5 3 4 2-> 5 4 2 3 -> 5 4 3 2
+		-> Time Complexity - O(n)
+	
+	14. Pascals Triangle
+		-> 
+		-> Time Complexity - O(n)
+	
+	
+		
+------------------------------------------------------------------
+
+
+
+
 
 Array Problem Tricks
 
