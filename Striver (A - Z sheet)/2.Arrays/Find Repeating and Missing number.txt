@@ -1,0 +1,26 @@
+
+https://takeuforward.org/data-structure/find-the-repeating-and-missing-numbers/
+
+Approaches
+	1. Hashing - O(n) / O(n)
+		Track each element and find the missing and repeating element from the List
+	
+	2. Summation Technique
+		arr = {4,3,6,2,1,1}			-> expectArr = {1,2,3,4,5,6}
+		
+		Find the sum of arr and expectArr from the list.
+		X = Repeating Element
+		Y = Missing element
+		
+		Sum of arr - Sum of expectArr = X - Y
+		Sn = X - Y			--->  Eq1
+		
+		Sum of squares of element of arr - Sum of Squares of element of expectArr = X^2 - Y^2
+		S2n = (X + Y)*(X - Y)
+		S2n = Sn(X + Y)		
+		X + y = S2n / Sn	---> Eq2
+		
+		X - Y = Sn			---> Eq1
+		
+		Use this equation to find the missing and repeating element
+		

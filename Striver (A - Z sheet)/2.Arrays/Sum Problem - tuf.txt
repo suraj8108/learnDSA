@@ -1,0 +1,19 @@
+
+Three Sums Problem:
+
+https://takeuforward.org/data-structure/3-sum-find-triplets-that-add-up-to-a-zero/
+
+	There are two ways to achieve this
+		1. Hashing
+			-> In this technique we need to loop twice on an array and find all the sum of two numbers and check if thid element is present in the array.
+		
+		2. Two Pointer Technique
+			-> Sort an array
+			-> Loop all the element of an array and find the pair of elements from the same array to check sum matches with that element or not.
+		
+	
+Four Sums Problem:
+
+https://takeuforward.org/data-structure/4-sum-find-quads-that-add-up-to-a-target-value/
+	
+	Same approach is being used.

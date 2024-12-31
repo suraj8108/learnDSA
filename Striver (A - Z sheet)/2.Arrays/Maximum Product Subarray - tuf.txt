@@ -1,0 +1,44 @@
+
+https://takeuforward.org/data-structure/maximum-product-subarray-in-an-array/
+
+Given an array that contains both negative and positive integers, find the maximum product subarray.
+
+Approaches
+	1. Naive Approach
+		Use the two 'for' loops and find all the possible subarray products and return the maximum out of that.
+		Time Complexity - O(n^2)
+		Space Complexity - O(1)
+	
+	2. Optimal Approach
+		
+		a. If all the element of an array is positive then the result will be positive.
+		b. If there are even numbers of negative elements then result will be positive.
+		c. If there are odd numbers of negative elements then in that case
+			-> 1 2 -1 -4 2 4 2 -2 2 1 4
+				-> In this case removing one of the negative element will suffice the situation so the answer could be its prefix product 
+					or it could be its suffix product.
+				-> Eg: consider -1 element so prefix product would be (1*2) and the suffix product will be (-4*2*4*2*-2*2*1*4)
+				-> Get all the prefix and suffix and keep comparing and print the maximum out of that.
+				
+				-> In case if there is any 0 element in the array then consider all the prev element of that array as 0 for suffix and prefix both.
+				
+				Algorithm
+					int suffix = 0
+					int prefix = 0
+					int result = MIN_VALUE
+					for(int i = 0; i < n; i++)
+						if prefix == 0 prefix = 1
+						if suffix == 0 suffix = 1
+						
+						prefix *= arr[i]
+						prefix *= arr[n - i -1]
+						
+						result = Max(result, Max(prefix, suffix))
+
+	3. Surajs Approach
+		-> I did the same but the logic I used was I considered all the subarrays present at the left and right of 0 as seperate array.
+		-> The I multiplied all the element of that subarray
+			-> If resultant element if positive then will consider it directly.
+			-> Else I try to get the product value by removing the left most negative number from left and right most negative element from subarray.
+				The product which is max I consider that.
+			

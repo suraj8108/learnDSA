@@ -1,11 +1,22 @@
 Arrays - Importanct Notes
 	
+	Applying Summation on the element
+		Sn = n*(n + 1) / 2
+		Some times this summation Helps to extract the right information from the problem
+	
+	Sorting
+		Applying sorting techniques on the element
+	
 	XOR Key Points
 		https://www.geeksforgeeks.org/bitwise-xor-operator-in-programming/
 		
 		-> XOR Table 1^1 = 0, 0^0 = 0, 0^1 = 1, 1^0 = 1
 		-> XOR of two same number is 0;
 		-> XOR of any number with 0 is eqaul to that number;
+		-> Commutative: The order of the inputs doesn't matter, so A ^ B = B ^ A.
+		-> Associative: The order of the operations doesn't matter, so A ^ (B ^ C) = (A ^ B) ^ C.
+		-> Identity element: Any value XOR'd with zero remains unchanged, so A ^ 0 = A.
+		-> Self-inverse: Any value XOR'd with itself gives zero, so A ^ A = 0.
 	
 	Hashing
 		
@@ -20,7 +31,7 @@ Arrays - Importanct Notes
 	
 	Kadanes Algoithm
 		-> Maximum sum of subarray.
-		-> Calculate prefixSum and mark it as 0 it at any point it becomes less that zero.
+		-> Calculate prefixSum and mark it as 0 it at any point it becomes less than zero.
 	
 	Transpose of a matrix:
 		-> Transpose the matrix. (transposing means changing columns to rows and rows to columns)
@@ -29,7 +40,9 @@ Arrays - Importanct Notes
 		7 8 9				3 6 9
 	
 	Pascals Triangle
-		-> Using Algoithm - n! / ( (n - r)! * r! )
+		-> Using Algoithm nCr - n! / ( (n - r)! * r! )
+	
+	
 	
 	
 	
@@ -89,9 +102,50 @@ Arrays = Problems
 		-> 5 2 3 4 -> 5 2 4 3 -> 5 3 2 4 -> 5 3 4 2-> 5 4 2 3 -> 5 4 3 2
 		-> Time Complexity - O(n)
 	
+	----
 	14. Pascals Triangle
-		-> 
 		-> Time Complexity - O(n)
+	
+	15. Majority n/3 element
+		-> Time Complexity - O(n)
+		-> Space Complexity - O(1)
+	
+	16. 3 Sums problem
+		Technique - Hashing, TwoPointer Technique
+		-> Time Complexity - O(n)
+		-> Space Complexity - O(n)
+	
+	17. 4 Sums problem
+		Technique - Two Pointer
+	
+	18. Longest Subarray Sum
+		Technique - Two Pointer
+		-> Time Complexity - O(n)
+		-> Space Complexity - O(1)
+	
+	19. Number of Subarrays with given XOR.
+		-> Technique: Hashing
+	
+	20. Merge Overlapping Sub-intervals
+		-> Technique: Sorting and Merging
+		-> Time Complexity - O(nlogn)
+	
+	21. Merge two sorted Arrays
+		-> Push the element from the back in Array1 and sort arr1 and arr2 individually.
+	
+	22. Find Repeating and Missing number
+		-> Using Summation, Hashing and Suraj's Algoithm
+		-> Time Complexity: O(n)
+	
+	23. Count inversions in an array
+		-> Using merge sort algorithm
+		-> Time Complexity = O(nlogn)
+	
+	24. Count Reverse Pairs
+		Similar to "Count Inversion"
+	
+	25. Maximum Product Subarray
+		Time Complexity - O(n)
 	
 	
 		

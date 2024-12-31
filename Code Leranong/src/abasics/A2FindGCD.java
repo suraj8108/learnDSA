@@ -1,7 +1,8 @@
 package abasics;
 
 public class A2FindGCD {
-	public static int findGCD(int a, int b) {
+	public static long findGCD(long a, long b) {
+		System.out.println(a + " " + b);
 		if(a == b) {
 			return a;
 		} else if(a > b) {
@@ -11,6 +12,6 @@ public class A2FindGCD {
 		}
 	}
 	public static void main(String[] args) {
-		System.out.printf("GCD of a Number is %d",findGCD(16, 20));
+		System.out.printf("GCD of a Number is %d",findGCD(100000000000L, 900000000002L));
 	}
 }

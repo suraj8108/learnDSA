@@ -1,0 +1,44 @@
+
+Binary Search IMP
+	
+	Time Complexity 
+		-> O(logn)
+	
+	Overflow case
+		-> If size of an array is Integer.MAX_VALUE. In this case while calculating the 'mid' two times MAX_VALUE will get added which overflows the int size.
+		-> Solution is to use long 
+			OR
+			mid = low + ((high - low) / 2)		--> This will solve our issue.
+		
+	
+	-> Whenever element is sorted think of Binary Search once.
+	-> In binary search One of the case is if element does not exists and last element is less than target.
+	
+	-> Refer Lower Bound Algorithm.
+		Lower Bound / Ceil 	= Smallest Element which is greater than or equal to target.
+		Floor 				= Largest Element which is lesser than or equal to target.
+	
+	-> In order to apply a binary search thing of elimination like which part to eliminate from considering.
+	
+	
+Binary Search on 1d array
+	
+	Implement Lower Bound		-- IMP
+		Using Binary Search
+		Time Complexity O(logN)
+	
+	Search Element in a Rotated Sorted Array -- IMP
+		Time Complexity O(logN)
+	
+	
+	
+	
+	
+
+
+Binary Search on 2d array
+
+
+
+Binary Search on 3d array
+	
