@@ -1,0 +1,50 @@
+
+https://takeuforward.org/data-structure/search-element-in-a-rotated-sorted-array/
+
+Approach
+	1. Naive Approach
+		Performing a linear search
+		Time Complexity: O(n)
+		Space Complexity: O(1)
+	
+	2. Suraj's Approach
+		-> Finding the Junction point and then search an element either in left part or in to the right part.
+		-> It works for both unique and duplicate elements in Array
+	
+	3. Optimal Approach
+		
+		-> Unique Elements is present in the array
+			7 8 9 1 2 3 4 5 6
+			This wont work for [1,0,1,1,1] target = 0
+			
+			-> Here either the left or the right part of an array will be sorted. We need to check that and update low and high index.
+			
+			func(arr, target, n){
+				
+				low = 0, high = n - 1
+				
+				while(low <= high){
+					mid = (low + high) / 2
+					
+					if(arr[mid] == target) return mid
+					
+					if(arr[low] < arr[mid]){
+						if(arr[low] < target && target < arr[mid]){
+							high = mid - 1;
+						} else {
+							low = mid + 1;
+						}
+					} else {
+						if(arr[mid] < target && target < arr[high]){
+							low = mid + 1;
+						} else {
+							high = mid - 1;
+						}
+					}
+					
+				}
+				return -1;
+			}
+			
+	
+	

@@ -18,6 +18,7 @@ public class A6SearchRotatedArr {
 		return -1;
 	}
 	
+	// Works only for unique elements
 	public static int findJunction(int[] arr) {
 		int n = arr.length, left = 0, right = n - 1;
 		int index = n;
@@ -38,8 +39,8 @@ public class A6SearchRotatedArr {
 		return index;
 	}
 	public static void main(String[] args) {
-		int[] arr = new int[] {4,1};
-		int target = 4;
+		int[] arr = new int[] {2,5,6,0,1,2};
+		int target = 0;
 		int index = findJunction(arr);
 		
 		int searchIndex = findElement(arr, 0, index, target);
@@ -47,6 +48,7 @@ public class A6SearchRotatedArr {
 			searchIndex = findElement(arr, index+1, arr.length - 1, target);
 		}
 		System.out.println("Index position is " + searchIndex);
+		
 		
 	}
 }

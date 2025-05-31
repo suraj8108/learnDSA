@@ -10,17 +10,18 @@ Binary Search IMP
 			OR
 			mid = low + ((high - low) / 2)		--> This will solve our issue.
 		
-	
-	-> Whenever element is sorted think of Binary Search once.
-	-> In binary search One of the case is if element does not exists and last element is less than target.
+	Tips:
+		-> Whenever element is sorted think of Binary Search once. But there are many problem where we use Binary Search where we do not have sorted list.
+		-> In binary search One of the case is if element does not exists and last element is less than target.
+		-> Preferably think of solution for unique elements in array first and then go for duplicate element.
 	
 	-> Refer Lower Bound Algorithm.
 		Lower Bound / Ceil 	= Smallest Element which is greater than or equal to target.
 		Floor 				= Largest Element which is lesser than or equal to target.
 	
-	-> In order to apply a binary search thing of elimination like which part to eliminate from considering.
+	-> In order to apply a binary search think of elimination like which part to eliminate from considering.
 	
-	
+
 Binary Search on 1d array
 	
 	Implement Lower Bound		-- IMP
@@ -28,13 +29,33 @@ Binary Search on 1d array
 		Time Complexity O(logN)
 	
 	Search Element in a Rotated Sorted Array -- IMP
-		Time Complexity O(logN)
+		Unique element in array
+			-> Time Complexity O(logN)
+			
+		Duplicate element in array
+			-> Time Complexity O(N/2)
+	
+	Find Mimimum element from Rotated Array - IMP
+		Unique element in array
+			-> 
+Binary Search on Answers:
+	-> In this problems generally given array is not a sorted list. We need to find a way to apply binary search.
+	-> Generally if problem required O(nlogn) the it can be solved with Binary search.
+	
+	Kth Missing Positive Number
+		Using Binary Search
+	
+	Aggressive Cows
+	
+	
+	Book Allocation Problem			-- VIMP
+		-> Refer TUF Documentation
+	
+	
+		
 	
 	
 	
-	
-	
-
 
 Binary Search on 2d array
 

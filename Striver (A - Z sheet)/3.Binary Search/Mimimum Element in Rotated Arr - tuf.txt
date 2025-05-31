@@ -1,0 +1,65 @@
+
+https://takeuforward.org/data-structure/minimum-in-rotated-sorted-array/
+
+Approaches
+	1. Naive Approach 
+		-> Linear Search - T(N)
+	
+	2. Using Binary Search - Opt1
+		-> 4,5,6,7,0,1,2,3
+			
+			In this approach the left most element is always considered as the smallest element.
+			So when we divide the array using binary search algorithm either the left subarray will be sorted or the right subarray will be sorted.
+			Getting the min out of both will be the result.
+		
+			Pseudo Code - Java:
+				minElement(arr){
+					int n = arr.length,
+					int left = 0; right = n - 1;
+					int ans = MAX_VALUE;
+					
+					while(left <= right){
+						int mid = (left + right) / 2;
+						
+						if(arr[left] <= arr[mid]){
+							ans = Min(ans, arr[left]);
+							left = mid + 1;
+						} else {
+							ans = Min(ans, arr[mid]);
+							right = mid - 1;
+						}
+					}
+					Print(ans)
+				}
+	
+	3. Using Binary Search - Opt2
+		Optimized version of Opt1.
+			
+			In this will have one more condition to check if the element is already sorted.
+			
+			Pseudo Code - Java:
+				minElement(arr){
+					int n = arr.length,
+					int left = 0; right = n - 1;
+					int ans = MAX_VALUE;
+					
+					while(left <= right){
+						int mid = (left + right) / 2;
+						
+						// Condition to check if the subarray is sorted.
+						if(arr[left] <= arr[right]){
+							ans = Min(ans, arr[left])
+							break;
+						}
+						
+						ans = Min(ans, arr[mid])
+
+						if(arr[mid] >= arr[left]){
+							left = mid + 1;
+						} else {
+							right = mid - 1;
+						}
+					}
+					Print(ans)
+				}
+		

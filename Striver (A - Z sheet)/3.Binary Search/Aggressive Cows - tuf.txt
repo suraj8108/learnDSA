@@ -1,0 +1,8 @@
+
+https://takeuforward.org/data-structure/aggressive-cows-detailed-solution/
+
+Optimized Approach
+	-> We will first sort the element of arr.
+	-> We will apply binary search having left as 1 and right as the maximum element from an array.
+	
+	-> We will check each mid elements whether there is possibility of alloacting 'k' cows at the distance of mid.
