@@ -1,19 +1,21 @@
-Array 
-Stack
-Queue
-String Manipulation
-Regex
-Sliding Window
-Searching and Sorting Algorithms
-Sets, LinkedList
-BST
-Heaps
-DFS, BFS
-Graph(Prism, Kruskal and Dijextras)
-HashMaps,
-Bit Manipulation
-Descrete Mathematics
-Greedy Algorithms
-Divide and Conquer
-Recursion and Recursive Tree
-DP
+
+Topics
+	-> Array 
+	-> Stack
+	-> Queue
+	-> String Manipulation
+	-> Regex
+	-> Sliding Window
+	-> Searching and Sorting Algorithms
+	-> Sets, LinkedList
+	-> BST
+	-> Heaps
+	-> DFS, BFS
+	-> Graph(Prism, Kruskal and Dijextras)
+	-> HashMaps,
+	-> Bit Manipulation
+	-> Descrete Mathematics
+	-> Greedy Algorithms
+	-> Divide and Conquer
+	-> Recursion and Recursive Tree
+	-> DP
